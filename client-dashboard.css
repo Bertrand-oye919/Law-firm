@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/pexels-ekaterina-bolovtsova-6077123.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* Changed to relative */
+    width:100vw;
+    height: 80vh;
+    color: #fff;
+    z-index: 1; /* Changed z-index */
+    overflow: scroll;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Added position relative */
+    z-index: 2; /* Added z-index */
+   
+}
+
+header h1 {
+    color: #D4AF37;
+}
+header p{
+    margin: 0 20px 0 0;   
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6px 0 5px 0;
+    position: relative; /* Added position relative */
+    z-index: 2; /* Added z-index */
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D4AF37;
+    font-size: 1.2rem;
+    margin-left:40px ;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    color: #fff;
+}
+.client-info{
+    height: 80vh;
+    width: 100vw;
+}
+.client{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   place-content: center;
+   margin-top: 5%;
+}
+.info{
+    text-align: right;
+  
+    background-color: rgba(0,0,0,0.5);
+    padding: 5%;
+    margin: 0 0 0 2%;
+}
+.info:hover{
+    box-shadow: 0px 3px 20px  #D4AF37;
+
+}
+.info h1{
+    color: #fff;
+    font-size: 2rem;
+}
+.info p{
+    margin-bottom: 3%;
+    width: 100%;
+    height: 50%;
+    font-size: 0.7rem;
+}
+.info a:hover{
+    color: #D4AF37;
+    background: #000;
+    box-shadow: 0px 1px 4px #D4AF37;
+}
+
+.info a{
+    text-decoration: none;
+    background-color: #D4AF37;
+    color: #000;
+    padding: 2%
+}
+
+.client img{
+    width: 20%;
+    border: 3px solid #D4AF37;
+    margin: 0 0 0 2%;
+}
+.profile{
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 4%;
+
+}
+.background{
+    border-radius: 2%;
+    background-image: url(./images/pexels-jules-palmer-6012907.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* Changed to relative */
+    width:100%;
+    height: 45vh;
+    color: #fff;
+    z-index: 1; /* Changed z-index */
+    overflow: hidden;
+   
+}
+
+.pic img{
+    width: 23%;
+    height: 35%;
+    position:relative;
+    margin-top: -15%;
+    margin-left: 2%;
+    z-index: 2;
+    border-radius: 5%;
+}
+.pic img:hover{
+    cursor: pointer;
+
+}
+.pic h2{
+    margin-top: -5%;
+    font-size: 1.3rem;
+    font-weight: 100;
+    position: relative;
+    margin-left: 4%;
+    margin-bottom: 3%;
+    z-index: 5;
+}
+.appointment{
+    margin-top: -2%;
+    margin-left: 4%;
+    width: 30%;
+}
+.appointment p{
+    font-size: 1rem;
+}
+.appointment h1{
+    font-size: 2rem;
+}
+.cover{
+  display: flex;
+}
+.intel{
+    margin-left: 2%;
+    margin-top: -20%;
+    z-index: 8;
+}
+.intel #id{
+    color: #D4AF37;
+}
+.intel h1{
+    font-size: 2rem;
+}
+.intel{
+    width: 50%;
+}
+
+@media screen and (max-width:767px){
+    body{
+        width: 100%;
+        height: 100pc;
+    }
+    .nav{
+        width: 100%;
+        padding-top: 4%;
+    }
+    nav ul {
+        display: block;
+        align-items: center;
+        justify-content: center; 
+    }
+    .profile{
+        width: 100%;
+        margin: 0;
+    }
+    .intel{
+        margin: -45% 0 0 -7%;
+    }
+    .pic img{
+        width: 40%;
+    }
+    .appointment{
+        margin: 10% 0 0 5%;
+        width: 50%;
+    }
+    .appointment h1{
+        font-size: 1rem;
+    }
+    .appointment p{
+        width: 100%;
+    }
+    .client{
+        margin-top: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 90px;
+    }
+    .info{
+        width: 100%;
+    }
+    .info h1{
+        font-size: 2.5rem;
+    }
+    .info p{
+        width: 100%;
+        font-size: 0.7rem;
+        font-family:'Times New Roman', Times, serif;
+
+    }
+    .client img{
+        width: 40%;
+        height: 30%;
+        border: 3px solid #fff;
+    }
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        width: 100%;
+        height: 100pc;
+    }
+    .client-info{
+        width: 100%;
+        height: 100%;
+    }
+    .nav{
+        width: 100%;
+    }
+    nav{
+        width: 70%;
+    }
+    nav ul li a{
+        margin: 0 0 2% ;
+    }
+    .info{
+        width: 50%;
+    }
+    .info h1{
+        font-size: 3rem;
+    }
+    .info p{
+        font-size: 1.5rem;
+    }
+    .client{
+        margin-top: 5%;
+    }
+    .client img{
+        width: 30%;
+        height: 60%;
+    }
+}
+@media screen and (min-width:992px){
+    body{
+        height: 100%;
+    }
+     .nav{
+        width: 100%;
+     }
+     .client{
+        margin-top: 0%;
+     }
+
+} 

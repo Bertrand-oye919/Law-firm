@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;  
+    margin-top: 20px;
+    background: #fff;
+   padding: 30px;    
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 10px;
+}
+.text {
+    color: #3c009d;
+    font-size: 45px;
+    font-weight: 700;
+}
+.input input {
+    height: 40px; 
+    width: 80%;
+    margin-left: 10%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 20px;
+    }
+.f-p { 
+    padding-left: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.f-p span {
+    color: blue;
+}
+.submit-container {
+    display: flex;  
+    gap: 30px;
+    margin: 40px auto;
+}
